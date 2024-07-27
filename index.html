@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather app</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <h1>Weather app</h1>
+        <div class="tab-container">
+            <p class="tab" data-userweather>Your Weather</p>
+            <p class="tab" data-searchweather>Search Weather</p>
+        </div>
+        <div class="weather-container">
+            <div class="sub-container grant-location-container">
+                <button class="btn" data-grantaccess>Grant Access</button>
+            </div>
+            <form class="form-container" data-searchform>
+                <input placeholder="Search for city..." data-searchinput>
+                <button class="btn" type="submit">
+                    <img src="./assests/search.png" width="20" height="20" loading="lazy"> 
+                </button>
+            </form>
+            <div class="sub-container loading-container">
+                <img src="./assests/Loading_icon.gif" width="150" height="150">
+                <p>Loading</p>
+            </div>
+            <div class="user-info-container">
+                <div class="name">
+                    <p data-cityName></p>
+                    <img data-countryIcon>
+                </div>
+                <p data-weatherdesc></p>
+                <img data-weatherIcon>
+                <p data-temp></p>
+                <div class="parameter-container">
+                    <div class="parameter">
+                        <img src="./assests/windspeed.webp" width="80" height="80">
+                        <p>Windspeed</p>
+                        <p data-windspeed></p>
+                    </div>
+                    <div class="parameter">
+                        <img src="./assests/humidity.png" width="80" height="80">
+                        <p>Humidity</p>
+                        <p data-humidity></p>
+                    </div>
+                    <div class="parameter">
+                        <img src="./assests/clouds.jpeg" width="80" height="80">
+                        <p>Clouds</p>
+                        <p data-cloudiness></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
